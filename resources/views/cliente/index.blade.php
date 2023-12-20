@@ -11,61 +11,59 @@
 
     <div class="py-12">
  <!-- Modal toggle -->
-    
-
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <thead class="text-xs text-gray-500 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     ID
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Nombre
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Apellido
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Celular
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Correo
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Genero
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Editar
                                 </th>
-                                <th scope="col" class="px-6">
+                                <th scope="col" class="px-6 py-3">
                                     Eliminar
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             @forelse ($clientes as $cliente)
-                                <tr class="bg-white border-b dark:bg-gray-300 dark:border-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <tr class="bg-white border-b white:bg-gray-800 white:border-gray-700">
 
                                         {{-- <img class="w-50 h-50 rounded-full" src="{{ $cliente->imagen_movil }}"  alt="image description"> --}}
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{$cliente->id }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{$cliente->nombre }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{$cliente->apellido }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{$cliente->celular }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{$cliente->correo }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{$cliente->genero }}
                                     </td>
                                    

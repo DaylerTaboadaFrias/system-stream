@@ -12,7 +12,6 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
         <link rel="stylesheet" href="{{ asset('css/estilofondo.css') }}">
         <link rel="stylesheet" href="{{ asset('css/estilomodo.css') }}">
     </head>

@@ -1,21 +1,15 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
-/** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./resources/**/*.vue",
-        "./node_modules/flowbite/**/*.js"
+      "./resources/**/*.blade.php",
+      "./resources/**/*.js",
+      "./resources/**/*.vue",
+      "./node_modules/flowbite/**/*.js"
     ],
-
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-            },
-        },
+      extend: {},
     },
-
-    plugins: [require('flowbite/plugin')],
-};
+    plugins: [
+        require('flowbite/plugin')
+    ],
+    darkMode: false,
+  }

@@ -15,10 +15,9 @@
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
-
+                <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <thead class="text-xs text-gray-500 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 {{-- <th scope="col" class="py-3 px-6">
                                     Imagen
@@ -54,30 +53,30 @@
                         </thead>
                         <tbody>
                             @forelse ($perfiles as $perfil)
-                                <tr class="bg-white border-b dark:bg-gray-300 dark:border-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <tr class="bg-white border-b white:bg-gray-800 white:border-gray-700">
                                     {{-- <td class="p-4 w-32">
                                         <img class="w-50 h-50 rounded-full" src="{{ $perfil->imagen_movil }}"
                                             alt="image description">
                                     </td> --}}
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->id }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->numero }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->cuenta->correo }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->fecha_pago }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->pin }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->estado }}
                                     </td>
-                                    <td class="py-4 px-6 font-semibold text-gray-900 dark:text-white">
+                                    <td class="py-4 px-6">
                                         {{ $perfil->yaseuso }}
                                     </td>
                                     <td class="py-4 px-6">
